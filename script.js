@@ -2,8 +2,15 @@
 // how to reduce 0-1 range to three choices
 let getComputerChoice = Math.floor(Math.random() * (4 - 1) + 1);
 
-console.log(getComputerChoice);
-
+if (getComputerChoice < 2) {
+    console.log("rock");
+}
+else if (getComputerChoice > 2) {
+    console.log("paper");
+}
+else {
+    console.log("scissor");
+}
 // - getHuman choice through prompt
 // - scoring module with humanScore and computerScore
 //     - init with 0
