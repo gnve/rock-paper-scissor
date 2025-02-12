@@ -32,33 +32,33 @@ function playRound(humanChoice, computerChoice) {
             console.log("It's a tie!")
         }
         else if (humanChoice == "PAPER" && computerChoice == "ROCK") {
-            return humanScore + 1;
+            humanScore + 1;
             console.log("You win! " + humanChoice + " beats " + computerChoice)
         }            
         else if (humanChoice == "SCISSOR" && computerChoice == "ROCK"){
-            return computerScore + 1;
+            computerScore + 1;
             console.log("You lose! " + computerChoice + " beats " + humanChoice)
         }
         else if (humanChoice == "PAPER" && computerChoice == "PAPER") {
             console.log("It's a tie!")
         }
         else if (humanChoice == "SCISSOR" && computerChoice == "PAPER") {
-            return humanScore + 1;
+            humanScore + 1;
             console.log("You win! " + humanChoice + " beats " + computerChoice)
         }            
         else if (humanChoice == "ROCK" && computerChoice == "PAPER"){
-            return computerScore + 1;
+            computerScore + 1;
             console.log("You lose! " + computerChoice + " beats " + humanChoice)
         }        
         else if (humanChoice == "SCISSOR" && computerChoice == "SCISSOR") {
             console.log("It's a tie!")
         }
         else if (humanChoice == "ROCK" && computerChoice == "SCISSOR") {
-            return humanScore + 1;
+            humanScore + 1;
             console.log("You win! " + humanChoice + " beats " + computerChoice)
         }            
         else if (humanChoice == "PAPER" && computerChoice == "SCISSOR"){
-            return computerScore + 1;
+            computerScore + 1;
             console.log("You lose! " + computerChoice + " beats " + humanChoice)
         }
     }
