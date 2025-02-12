@@ -1,5 +1,5 @@
 # rock-paper-scissor
-console rock-paper-scissor
+console rock-paper-scissor game
 
 ## pseudocode
 - getComputerChoice by using Math.random
