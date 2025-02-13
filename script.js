@@ -58,11 +58,28 @@ function playRound(humanChoice, computerChoice) {
         console.log("Score is: Human: " + humanScore + ", Computer: " + computerScore);
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
-
 // playGame function starts the game
 // - move playRound into playGame to keep track of score
 // - declares a winner after 5 rounds
+function playGame(rounds) {
+    let i = 0;
+    while (i < rounds) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+        i++;
+    }
+    console.log("Human: " + humanScore + ", Robot: " + computerScore);
+    // if (humanScore > computerScore) {
+    // console.log("You win the game!");
+    // }
+    // else {
+    // console.log("Try again next time.");
+    // }
+}
+
+playGame(5);
+
+// todo
+// scoring is wonky
+// prompt each round, not just keep one answer
