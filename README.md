@@ -3,7 +3,7 @@ console rock-paper-scissor game
 
 ## pseudocode
 - getComputerChoice by using Math.random
-- getHuman choice through prompt
+- getHumanChoice through prompt
 - scoring module with humanScore and computerScore
     - init with 0
 - playRound function which tracks score
@@ -13,3 +13,6 @@ console rock-paper-scissor game
 - playGame function starts the game
     - move playRound into playGame to keep track of score
     - declares a winner after 5 rounds
+
+## results
+![Console screenshot](/final.png)
