@@ -5,12 +5,12 @@ function getComputerChoice() {
 
 // - getHumanChoice through prompt
 // - humanChoice needs to be case-sensitive e.g. "RoCk", "rock", "ROCK"
-let promptAnswer = prompt("Rock, paper, scissor?");
+let promptAnswer = "";
 function getHumanChoice() {
     return promptAnswer.toUpperCase();
 }
 
-console.log("You select: " + getHumanChoice());
+// console.log("You select: " + getHumanChoice());
 
 // - scoring module with humanScore and computerScore
 //     - init with 0
@@ -22,6 +22,8 @@ let computerScore = 0;
 //      - console.log of playRound with a string value e.g. "You lose! x beats y"
 
 function playRound(humanChoice, computerChoice) {
+    promptAnswer = prompt("Rock, paper, scissor?")
+    console.log("You select: " + getHumanChoice());
     if (humanChoice == "ROCK" && computerChoice == 1) {
         console.log("It's a tie!")
     }
@@ -48,14 +50,13 @@ function playRound(humanChoice, computerChoice) {
         console.log("It's a tie!")
     }
     else if (humanChoice == "ROCK" && computerChoice == 3) {
-        humanScore =+ 1;
+        humanScore++;
         console.log("You win! " + humanChoice + " beats SCISSOR.")
     }            
     else if (humanChoice == "PAPER" && computerChoice == 3){
         computerScore++;
         console.log("You lose! PAPER beats " + humanChoice)
     }
-        console.log("Score is: Human: " + humanScore + ", Computer: " + computerScore);
 }
 
 // playGame function starts the game
@@ -69,17 +70,19 @@ function playGame(rounds) {
         playRound(humanSelection, computerSelection);
         i++;
     }
-    console.log("Human: " + humanScore + ", Robot: " + computerScore);
-    // if (humanScore > computerScore) {
-    // console.log("You win the game!");
-    // }
-    // else {
-    // console.log("Try again next time.");
-    // }
+
+console.log("FINAL SCORE! Human: " + humanScore + ", Robot: " + computerScore);
+if (humanScore > computerScore) {
+        console.log("Congratulations! You win the game!");
+    }
+    else {
+        console.log("You lose. Try again next time.");
+    }
 }
 
-playGame(5);
+playGame(3);
 
 // todo
-// scoring is wonky
-// prompt each round, not just keep one answer
+// scoring is wonky DONE
+// prompt each round, not just keep one answer DONE
+// playRound function does not output the first time
