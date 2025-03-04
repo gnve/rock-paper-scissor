@@ -24,6 +24,8 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "ROCK" && computerChoice === 1) {
         console.log("It's a tie!");
+        const tieMessage = document.getElementById("tie");
+        tieMessage.innerHTML = "It's a tie. Pick again!"
     }
     else if (humanChoice === "PAPER" && computerChoice === 1) {
         humanScore++;
@@ -35,6 +37,8 @@ function playRound(humanChoice, computerChoice) {
     }
     else if (humanChoice === "PAPER" && computerChoice === 2) {
         console.log("It's a tie!");
+        const tieMessage = document.getElementById("tie");
+        tieMessage.innerHTML = "It's a tie. Pick again!"
     }
     else if (humanChoice === "SCISSOR" && computerChoice === 2) {
         humanScore++;
@@ -46,6 +50,8 @@ function playRound(humanChoice, computerChoice) {
     }        
     else if (humanChoice === "SCISSOR" && computerChoice === 3) {
         console.log("It's a tie!");
+        const tieMessage = document.getElementById("tie");
+        tieMessage.innerHTML = "It's a tie. Pick again!"
     }
     else if (humanChoice === "ROCK" && computerChoice === 3) {
         humanScore++;
@@ -60,20 +66,24 @@ function playRound(humanChoice, computerChoice) {
 function playGame(rounds) {
     let i = 0;
     while (i < rounds) {
+        document.getElementById("tie").innerHTML = ""
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
         i++;
     }
     // final score message
-    console.log("Running Score: Human: " + humanScore + ", Robot: " + computerScore);
+    const runningScore = document.getElementById("running");
+    runningScore.innerHTML = "Running Score: Human: " + humanScore + ", Robot: " + computerScore
 
     // game over message
     if (humanScore === 5) {
-            console.log("Congratulations! You win the game!");
+        const trackingMessage = document.getElementById("results");
+        trackingMessage.innerHTML = "Congratulations! You win the game!"
     }
     else if (computerScore === 5) {
-        console.log("You lose the game. Try again next time.");
+        const trackingMessage = document.getElementById("results");
+        trackingMessage.innerHTML = "Womp womp! You lose. Play again."
     }
 }
 

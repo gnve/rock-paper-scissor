@@ -16,7 +16,7 @@ a basic js and dom manipulation exercise through the odin project curriculum
     - declares a winner after 5 rounds
 
 ## results (console)
-![Console screenshot](/final.png)
+![console screenshot](/final.png)
 
 ## pseudocode (ui version)
 - assign btnChoice value with button event listener for each choice
@@ -25,6 +25,10 @@ a basic js and dom manipulation exercise through the odin project curriculum
 - playGame updated logic
     - while either score is less than 5, don't print message
 - append a scoring and results div
+- bonus: add warning when there's a tie to prompt user to click again
 
 ## adding a ui results
+![tie screenshot](/tie.png)
+![win screenshot](/win.png)
+
 
