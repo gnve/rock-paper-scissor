@@ -1,7 +1,8 @@
 # rock-paper-scissor
-console rock-paper-scissor game
+console rock-paper-scissor game!
+a basic js and dom manipulation exercise.
 
-## pseudocode
+## pseudocode (console version)
 - getComputerChoice by using Math.random
 - getHumanChoice through prompt
 - scoring module with humanScore and computerScore
@@ -14,5 +15,10 @@ console rock-paper-scissor game
     - move playRound into playGame to keep track of score
     - declares a winner after 5 rounds
 
-## results
+## results (console)
 ![Console screenshot](/final.png)
+
+## pseudocode (ui version)
+
+## adding a ui results
+
