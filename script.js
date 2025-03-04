@@ -60,36 +60,36 @@ function playRound(humanChoice, computerChoice) {
 function playGame(rounds) {
     let i = 0;
     while (i < rounds) {
-        promptAnswer = prompt("Rock, paper, scissor?");
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
         i++;
     }
     // final score message
-    console.log("FINAL SCORE! Human: " + humanScore + ", Robot: " + computerScore);
+    console.log("Running Score: Human: " + humanScore + ", Robot: " + computerScore);
 
     // game over message
-    if (humanScore > computerScore) {
+    if (humanScore === 5) {
             console.log("Congratulations! You win the game!");
     }
-    else if (computerScore > humanScore) {
-        console.log("You lose. Try again next time.");
-    }
-    else {
-        console.log("It's a tie! Play again.")
+    else if (computerScore === 5) {
+        console.log("You lose the game. Try again next time.");
     }
 }
 
 // event listeners for button clicks
 document.getElementById("rock").addEventListener("click", () => {
     btnChoice = "ROCK";
+    playGame(1);
 })
 
 document.getElementById("paper").addEventListener("click", () => {
     btnChoice = "PAPER";
+    playGame(1);
 })
 
 document.getElementById("scissor").addEventListener("click", () => {
     btnChoice = "SCISSOR";
+    playGame(1);
 })
+

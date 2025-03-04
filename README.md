@@ -1,6 +1,6 @@
 # rock-paper-scissor
-console rock-paper-scissor game!
-a basic js and dom manipulation exercise.
+console rock-paper-scissor game
+a basic js and dom manipulation exercise through the odin project curriculum
 
 ## pseudocode (console version)
 - getComputerChoice by using Math.random
@@ -19,6 +19,12 @@ a basic js and dom manipulation exercise.
 ![Console screenshot](/final.png)
 
 ## pseudocode (ui version)
+- assign btnChoice value with button event listener for each choice
+- call playGame function within event listener
+    - modify scoring logic to announce winner once 5 points have been reached by either
+- playGame updated logic
+    - while either score is less than 5, don't print message
+- append a scoring and results div
 
 ## adding a ui results
 
