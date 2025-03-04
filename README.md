@@ -1,5 +1,5 @@
 # rock-paper-scissor
-console rock-paper-scissor game
+console rock-paper-scissor game,
 a basic js and dom manipulation exercise through the odin project curriculum
 
 ## pseudocode (console version)
