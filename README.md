@@ -27,8 +27,10 @@ a basic js and dom manipulation exercise through the odin project curriculum
 - append a scoring and results div
 - bonus: add warning when there's a tie to prompt user to click again
 
-## adding a ui results
+## adding ui results
+### tie message
 ![tie screenshot](/tie.png)
+### game over message
 ![win screenshot](/win.png)
 
 
